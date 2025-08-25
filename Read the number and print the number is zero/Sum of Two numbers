@@ -1,0 +1,10 @@
+DECLARE
+    num1 INTEGER := 12;  -- first number
+    num2 INTEGER := 25;  -- second number
+    sum_result INTEGER;
+BEGIN
+    sum_result := num1 + num2;
+
+    DBMS_OUTPUT.PUT_LINE('The sum of ' || num1 || ' and ' || num2 || ' is: ' || sum_result);
+END;
+/
