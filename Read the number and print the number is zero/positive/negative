@@ -1,0 +1,12 @@
+DECLARE
+    num INTEGER := 0;
+BEGIN
+    IF num > 0 THEN
+        DBMS_OUTPUT.PUT_LINE(num || ' NUMBER IS POSITIVE');
+    ELSIF num < 0 THEN
+        DBMS_OUTPUT.PUT_LINE(num || ' NUMBER IS NEGATIVE');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE(num || ' NUMBER IS ZERO');
+    END IF;
+END;
+/
