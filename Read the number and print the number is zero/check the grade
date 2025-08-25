@@ -1,0 +1,19 @@
+DECLARE
+    marks INTEGER := 85; 
+    grade CHAR(1);
+BEGIN
+    IF marks >= 90 THEN
+        grade := 'A';
+    ELSIF marks >= 75 THEN
+        grade := 'B';
+    ELSIF marks >= 60 THEN
+        grade := 'C';
+    ELSIF marks >= 50 THEN
+        grade := 'D';
+    ELSE
+        grade := 'F';
+    END IF;
+
+    DBMS_OUTPUT.PUT_LINE('Marks: ' || marks || ' => Grade: ' || grade);
+END;
+/
