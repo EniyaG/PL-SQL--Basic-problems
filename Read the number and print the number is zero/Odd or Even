@@ -1,7 +1,7 @@
 DECLARE
 a number:=5;
 BEGIN
-if (mod(a,2)=1) then
+if (mod(a,2)=0) then
 DBMS_OUTPUT.PUT_LINE('EVEN');
 else
 DBMS_OUTPUT.PUT_LINE('ODD');
